@@ -1,0 +1,304 @@
+/* General Styling & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px 0;
+}
+
+/*Navbar */
+.hero-section {
+    background: url(../image/WhatsApp\ Image\ 2025-10-31\ at\ 09.58.23_35783681.jpg);
+}
+
+header {
+    background-color:#cca947ef;
+    box-shadow: 0 2px 4px #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #e6e096; 
+}
+
+/* Hero Section */
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+/* Overlay untuk kontras teks jika menggunakan background-image */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 50%; 
+}
+
+.hero-content h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4em;
+    margin-bottom: 0.2em;
+    line-height: 1;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.btn-join {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.btn-join:hover {
+    background-color: #929292;
+}
+
+.hero-image {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    max-height: 80%;
+    width: auto;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Collaboration Section & IPAS Section (Product Showcase) */
+.crafts-section, .ipas-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.crafts-section h2, .ipas-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #72a98f;
+    font-family: 'Playfair Display', serif;
+}
+
+.collaboration-grid, .ipas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.collab-item, .ipas-item {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e6e096;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.collab-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.ipas-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.caption {
+    font-weight: 600;
+    color: #555;
+}
+
+/* Quote/Conclusion Section */
+.quote-section {
+    background-color: #e6e096;
+    padding: 80px 0;
+}
+
+.quote-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.quote-img {
+    width: 30%;
+    max-width: 250px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #2b2b2a;
+    border-left: 5px solid #e6dc76;
+    padding-left: 20px;
+}
+  
+/* Aanggota */
+
+.team-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.team-section h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.team-member {
+  width: 280px;              
+  height: 380px;             
+  background: #e6e096;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  transition: transform 0.3s ease;
+  align-items: center;
+}
+
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.team-member .position {
+    color: #000;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.team-member .desc {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+    color: #000;
+}
+/* Footer */
+footer {
+    background-color: #cca947ef; 
+    color: #fff;
+    padding-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-col h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer-col p, .footer-col li {
+    font-size: 0.9em;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col a:hover {
+    color: #e6e096;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #fff;
+}
